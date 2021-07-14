@@ -40,12 +40,9 @@ nav {
     list-style-type: none;
 }
 
-.main-nav li {
+.nav-ul li a {
     display: inline-block;
     margin: 10px;
-}
-
-a {
     color: black;
     text-decoration: none;
 }
@@ -91,8 +88,8 @@ h1 {
 
 @keyframes slideLeft {
     from {
-        margin-left: 100%;
-        width: 300%;
+        margin-left: -100%;
+        width: -300%;
     }
     to {
         margin-left: 0%;
