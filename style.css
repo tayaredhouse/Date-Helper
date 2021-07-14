@@ -3,3 +3,136 @@
     padding: 0;
 }
 
+@font-face {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+body {
+    font-family: 'Noto Sans';
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.nav-container {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    float: left;
+    margin: 1%;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin: 10px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    font-weight: 800;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+h1 {
+    animation-name: fadeIn;
+    animation-duration: 6s;
+}
+
+@keyframes slideLeft {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+#helper-link {
+    animation-name: slideLeft;
+    animation-duration: 2s;
+}
+
+@keyframes slideRight {
+    from {
+        margin-right: 100%;
+        width: 300%;
+    }
+    to {
+        margin-right: 0%;
+        width: 100%;
+    }
+}
+#second-para {
+    animation-name: slideRight;
+    animation-duration: 2s;
+}
+.dateHelper {
+    margin: 10%;
+    overflow: hidden;
+}
+.bgimagecontainer1 {
+    width: 100vw;
+    height: 50vh;
+    background-image: url('Assets/priscilla-du-preez-ELnxUDFs6ec-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment:fixed;
+}
+
+.science {
+    margin: 10%;
+}
+
+.bgimagecontainer2 {
+    width: 100vw;
+    height: 50vh;
+    background-image: url('Assets/jonathan-j-castellon-be8AmxavYp8-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment:fixed;
+}
+
+.testimonials {
+    margin: 10%;
+}
+
+.bgimagecontainer3 {
+    width: 100vw;
+    height: 50vh;
+    background-image: url('Assets/priscilla-du-preez-KnAhRJHeI7A-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment:fixed;
+}
+
+.try-now{
+    margin: 10%;
+}
+
+button {
+    width: 150px;
+    background-color: white;
+    font-size: 1.5em;
+    border: 2px solid black;
+    border-radius: 9px;
+    margin-top: 30px;
+}
+
+#generated {
+    margin-top: 30px;
+}
