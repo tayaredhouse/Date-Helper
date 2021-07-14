@@ -1,3 +1,14 @@
+//coding for hamburger navbar on mobile
+const hamburger = document.getElementById('hamburger')
+const navUL = document.getElementById('nav-ul')
+
+hamburger.addEventListener('click', () => {
+  navUL.classList.toggle('show');
+})
+
+
+
+//Coding for pickupline generator
 const introLinesArray = ['Are you', 'Do you have', 
 'If you were', 'I\'m not',
  'If I were', 'Do you like', 'Is this', 'If looks could kill, you\'d be'];

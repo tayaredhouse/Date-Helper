@@ -1,3 +1,5 @@
+/*Univeral Page Styles*/
+
 * {
     margin: 0;
     padding: 0;
@@ -14,15 +16,28 @@ body {
     line-height: 1.5;
 }
 
-.nav-container {
+/*Navigation styling*/
+
+.logo {
+    padding: 0;
+    float:left;
+}
+
+nav {
     display:flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 3;
+    flex-wrap: wrap;
+    padding: 15px;
 }
 
-.logo {
-    float: left;
-    margin: 1%;
+.nav-ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    list-style-type: none;
 }
 
 .main-nav li {
@@ -39,6 +54,23 @@ a:hover {
     font-weight: 800;
 }
 
+.hamburger{
+    color:black;
+    font-size: 20px;
+    width: 40px;
+    display: none;
+    border: 0;
+    margin-top: 0;
+
+}
+/*Container div for beginning info*/
+.dateHelper {
+    margin: 10%;
+    overflow: hidden;
+}
+
+/*animation for the header upon loading*/
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -47,9 +79,14 @@ a:hover {
         opacity: 100%;
     }
 }
+
+/*Animation fade happens to this & then animation changes opacity to 100% afterwards*/
 h1 {
+    opacity: 0%;
     animation-name: fadeIn;
     animation-duration: 6s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
 }
 
 @keyframes slideLeft {
@@ -81,10 +118,8 @@ h1 {
     animation-name: slideRight;
     animation-duration: 2s;
 }
-.dateHelper {
-    margin: 10%;
-    overflow: hidden;
-}
+
+
 .bgimagecontainer1 {
     width: 100vw;
     height: 50vh;
@@ -111,6 +146,10 @@ h1 {
     margin: 10%;
 }
 
+.testimonials p {
+    margin-bottom: 10px;
+}
+
 .bgimagecontainer3 {
     width: 100vw;
     height: 50vh;
@@ -133,6 +172,31 @@ button {
     margin-top: 30px;
 }
 
+/*Javascript container for generated pickuplines*/
 #generated {
     margin-top: 30px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+   
+    .nav-container {
+        padding-bottom: 3em;
+        font-size: 1em;
+    }
+    .main-nav li {
+        margin-left: 0%;
+    }
+    .nav-ul {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .nav-ul.show {
+        display: flex;
+    }
+    
+    .hamburger {
+        display: block;
+    }
 }
